@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170514 00:56:36.357" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\development\robot-scripts\Amazon\tests\amazon.robot" id="s1" name="Amazon">
+<test id="s1-t1" name="User should be required to sign in when checking out">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://www.amazon.com @{BROWSERS}</arg>
+</arguments>
+<msg timestamp="20170514 00:56:36.560" level="INFO">Opening browser 'firefox' to base url 'http://www.amazon.com [u'Firefox']'</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170514 00:56:40.711" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170514 00:56:40.711" starttime="20170514 00:56:40.618"></status>
+</kw>
+<msg timestamp="20170514 00:56:40.711" level="FAIL">WebDriverException: Message: f.QueryInterface is not a function
+Stacktrace:
+    at FirefoxDriver.prototype.get (file:///c:/users/mazums3/appdata/local/temp/tmpa7owgw/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:10132)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/mazums3/appdata/local/temp/tmpa7owgw/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/mazums3/appdata/local/temp/tmpa7owgw/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/mazums3/appdata/local/temp/tmpa7owgw/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)</msg>
+<status status="FAIL" endtime="20170514 00:56:40.711" starttime="20170514 00:56:36.560"></status>
+</kw>
+<doc>This is some basic information about the test</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" endtime="20170514 00:56:40.711" critical="yes" starttime="20170514 00:56:36.560">WebDriverException: Message: f.QueryInterface is not a function
+Stacktrace:
+    at FirefoxDriver.prototype.get (file:///c:/users/mazums3/appdata/local/temp/tmpa7owgw/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:10132)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/mazums3/appdata/local/temp/tmpa7owgw/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/mazums3/appdata/local/temp/tmpa7owgw/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/mazums3/appdata/local/temp/tmpa7owgw/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)</status>
+</test>
+<doc>This is some basic info</doc>
+<status status="FAIL" endtime="20170514 00:56:40.711" starttime="20170514 00:56:36.357"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">Smoke</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Amazon" pass="0">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

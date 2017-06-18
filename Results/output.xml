@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170618 00:36:13.945" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\development\robot-scripts\FlightApplication\tests\FlightApp.robot" id="s1" name="FlightApp">
+<test id="s1-t1" name="Should be able to navigate To Login Page">
+<kw name="Open the browser" library="Openbrowser">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170618 00:36:14.272" level="INFO">Opening browser 'firefox' to base url 'http://www.newtours.demoaut.com/mercurywelcome.php'</msg>
+<status status="PASS" endtime="20170618 00:36:24.190" starttime="20170618 00:36:14.272"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:24.190" starttime="20170618 00:36:14.272"></status>
+</kw>
+<kw name="Init" library="Openbrowser">
+<kw name="Register Keyword To Run On Failure" library="Selenium2Library">
+<doc>Sets the keyword to execute when a Selenium2Library keyword fails.</doc>
+<arguments>
+<arg>Capture Page Screenshot With Unique Name</arg>
+</arguments>
+<msg timestamp="20170618 00:36:24.190" level="INFO">Capture Page Screenshot With Unique Name will be run on failure.</msg>
+<status status="PASS" endtime="20170618 00:36:24.190" starttime="20170618 00:36:24.190"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:24.190" starttime="20170618 00:36:24.190"></status>
+</kw>
+<kw name="Capture Page Screenshot With Unique Name" library="Openbrowser">
+<kw name="Uuid 4" library="uuid">
+<doc>Generate a random UUID.</doc>
+<assign>
+<var>${uuid}</var>
+</assign>
+<msg timestamp="20170618 00:36:24.190" level="INFO">${uuid} = da748144-abdc-4ca2-8892-885b6544cd54</msg>
+<status status="PASS" endtime="20170618 00:36:24.190" starttime="20170618 00:36:24.190"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>selenium-${uuid}.png</arg>
+</arguments>
+<msg timestamp="20170618 00:36:24.471" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-da748144-abdc-4ca2-8892-885b6544cd54.png"&gt;&lt;img src="selenium-da748144-abdc-4ca2-8892-885b6544cd54.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170618 00:36:24.471" starttime="20170618 00:36:24.190"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:24.471" starttime="20170618 00:36:24.190"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Openbrowser">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${LANDING_TEXT}</arg>
+</arguments>
+<status status="PASS" endtime="20170618 00:36:24.611" starttime="20170618 00:36:24.471"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:24.611" starttime="20170618 00:36:24.471"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:24.611" critical="yes" starttime="20170618 00:36:14.272"></status>
+</test>
+<test id="s1-t2" name="Should be able to login thru The User Credentials">
+<kw name="Sign-on thru user credentials" library="Login">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=userName</arg>
+<arg>${USER_NAME}</arg>
+</arguments>
+<msg timestamp="20170618 00:36:24.611" level="INFO">Typing text 'mercury' into text field 'name=userName'</msg>
+<status status="PASS" endtime="20170618 00:36:24.986" starttime="20170618 00:36:24.611"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=password</arg>
+<arg>${PASSWD}</arg>
+</arguments>
+<msg timestamp="20170618 00:36:24.986" level="INFO">Typing text 'mercury' into text field 'name=password'</msg>
+<status status="PASS" endtime="20170618 00:36:25.454" starttime="20170618 00:36:24.986"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=login</arg>
+</arguments>
+<msg timestamp="20170618 00:36:25.454" level="INFO">Clicking element 'name=login'.</msg>
+<status status="PASS" endtime="20170618 00:36:29.922" starttime="20170618 00:36:25.454"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:29.922" starttime="20170618 00:36:24.611"></status>
+</kw>
+<kw name="Capture Page Screenshot With Unique Name" library="Login">
+<kw name="Uuid 4" library="uuid">
+<doc>Generate a random UUID.</doc>
+<assign>
+<var>${uuid}</var>
+</assign>
+<msg timestamp="20170618 00:36:29.922" level="INFO">${uuid} = fcdeb295-c81f-4f31-a898-8e6a3e8eb005</msg>
+<status status="PASS" endtime="20170618 00:36:29.922" starttime="20170618 00:36:29.922"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>selenium-${uuid}.png</arg>
+</arguments>
+<msg timestamp="20170618 00:36:30.250" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-fcdeb295-c81f-4f31-a898-8e6a3e8eb005.png"&gt;&lt;img src="selenium-fcdeb295-c81f-4f31-a898-8e6a3e8eb005.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170618 00:36:30.250" starttime="20170618 00:36:29.922"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170618 00:36:35.252" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170618 00:36:35.252" starttime="20170618 00:36:30.250"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:35.252" starttime="20170618 00:36:29.922"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:35.252" critical="yes" starttime="20170618 00:36:24.611"></status>
+</test>
+<test id="s1-t3" name="Should be able to navigate to Flight Finder Page and click to Continue button">
+<kw name="Click to navigate Flight finder page" library="Flightfinder">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=findFlights</arg>
+</arguments>
+<msg timestamp="20170618 00:36:35.252" level="INFO">Clicking element 'name=findFlights'.</msg>
+<status status="PASS" endtime="20170618 00:36:36.453" starttime="20170618 00:36:35.252"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:36.453" starttime="20170618 00:36:35.252"></status>
+</kw>
+<kw name="Capture Page Screenshot With Unique Name" library="Flightfinder">
+<kw name="Uuid 4" library="uuid">
+<doc>Generate a random UUID.</doc>
+<assign>
+<var>${uuid}</var>
+</assign>
+<msg timestamp="20170618 00:36:36.453" level="INFO">${uuid} = 736b5db6-d2f6-466a-aa8f-94313eb2dda4</msg>
+<status status="PASS" endtime="20170618 00:36:36.453" starttime="20170618 00:36:36.453"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>selenium-${uuid}.png</arg>
+</arguments>
+<msg timestamp="20170618 00:36:36.765" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-736b5db6-d2f6-466a-aa8f-94313eb2dda4.png"&gt;&lt;img src="selenium-736b5db6-d2f6-466a-aa8f-94313eb2dda4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170618 00:36:36.765" starttime="20170618 00:36:36.453"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170618 00:36:41.773" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170618 00:36:41.773" starttime="20170618 00:36:36.765"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:41.773" starttime="20170618 00:36:36.453"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:41.773" critical="yes" starttime="20170618 00:36:35.252"></status>
+</test>
+<test id="s1-t4" name="Should be able to navigate to Select Flight Page and click to Continue button">
+<kw name="Click to navigate Select Flight page" library="Selectflight">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=reserveFlights</arg>
+</arguments>
+<msg timestamp="20170618 00:36:41.773" level="INFO">Clicking element 'name=reserveFlights'.</msg>
+<status status="PASS" endtime="20170618 00:36:43.099" starttime="20170618 00:36:41.773"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:43.099" starttime="20170618 00:36:41.773"></status>
+</kw>
+<kw name="Capture Page Screenshot With Unique Name" library="Selectflight">
+<kw name="Uuid 4" library="uuid">
+<doc>Generate a random UUID.</doc>
+<assign>
+<var>${uuid}</var>
+</assign>
+<msg timestamp="20170618 00:36:43.099" level="INFO">${uuid} = bad48566-4a12-49a1-aafe-5b1ee10dad32</msg>
+<status status="PASS" endtime="20170618 00:36:43.099" starttime="20170618 00:36:43.099"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>selenium-${uuid}.png</arg>
+</arguments>
+<msg timestamp="20170618 00:36:43.442" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-bad48566-4a12-49a1-aafe-5b1ee10dad32.png"&gt;&lt;img src="selenium-bad48566-4a12-49a1-aafe-5b1ee10dad32.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170618 00:36:43.442" starttime="20170618 00:36:43.099"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170618 00:36:48.450" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170618 00:36:48.450" starttime="20170618 00:36:43.442"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:48.450" starttime="20170618 00:36:43.099"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:48.450" critical="yes" starttime="20170618 00:36:41.773"></status>
+</test>
+<test id="s1-t5" name="Should be able to Book flights thru Flight Application">
+<kw name="Enter the credit card details to Book a Flight page" library="Bookflight">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=passFirst0</arg>
+<arg>${FIRST_NAME}</arg>
+</arguments>
+<msg timestamp="20170618 00:36:48.450" level="INFO">Typing text 'FNAME' into text field 'name=passFirst0'</msg>
+<status status="PASS" endtime="20170618 00:36:48.842" starttime="20170618 00:36:48.450"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=passLast0</arg>
+<arg>${LAST_NAME}</arg>
+</arguments>
+<msg timestamp="20170618 00:36:48.842" level="INFO">Typing text 'LNAME' into text field 'name=passLast0'</msg>
+<status status="PASS" endtime="20170618 00:36:49.235" starttime="20170618 00:36:48.842"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=creditnumber</arg>
+<arg>${CC_NUMBER}</arg>
+</arguments>
+<msg timestamp="20170618 00:36:49.235" level="INFO">Typing text '1234567887654321' into text field 'name=creditnumber'</msg>
+<status status="PASS" endtime="20170618 00:36:49.593" starttime="20170618 00:36:49.235"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=buyFlights</arg>
+</arguments>
+<msg timestamp="20170618 00:36:49.593" level="INFO">Clicking element 'name=buyFlights'.</msg>
+<status status="PASS" endtime="20170618 00:36:51.247" starttime="20170618 00:36:49.593"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:51.247" starttime="20170618 00:36:48.450"></status>
+</kw>
+<kw name="Capture Page Screenshot With Unique Name" library="Bookflight">
+<kw name="Uuid 4" library="uuid">
+<doc>Generate a random UUID.</doc>
+<assign>
+<var>${uuid}</var>
+</assign>
+<msg timestamp="20170618 00:36:51.247" level="INFO">${uuid} = adf9ce1e-9782-4167-8219-96b0739c53c8</msg>
+<status status="PASS" endtime="20170618 00:36:51.247" starttime="20170618 00:36:51.247"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>selenium-${uuid}.png</arg>
+</arguments>
+<msg timestamp="20170618 00:36:51.512" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-adf9ce1e-9782-4167-8219-96b0739c53c8.png"&gt;&lt;img src="selenium-adf9ce1e-9782-4167-8219-96b0739c53c8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170618 00:36:51.512" starttime="20170618 00:36:51.247"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170618 00:36:56.520" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170618 00:36:56.520" starttime="20170618 00:36:51.512"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:56.520" starttime="20170618 00:36:51.247"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:56.520" critical="yes" starttime="20170618 00:36:48.450"></status>
+</test>
+<test id="s1-t6" name="Should be able to verify Flight Confirmation page and close browser by logging out">
+<kw name="Logs out from flight confirmation page and close the browser" library="Logout">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//img[contains(@src,'/images/forms/Logout.gif')]</arg>
+</arguments>
+<msg timestamp="20170618 00:36:56.520" level="INFO">Clicking element 'xpath=//img[contains(@src,'/images/forms/Logout.gif')]'.</msg>
+<status status="PASS" endtime="20170618 00:36:56.754" starttime="20170618 00:36:56.520"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:36:56.754" starttime="20170618 00:36:56.520"></status>
+</kw>
+<kw name="Capture Page Screenshot With Unique Name" library="Logout">
+<kw name="Uuid 4" library="uuid">
+<doc>Generate a random UUID.</doc>
+<assign>
+<var>${uuid}</var>
+</assign>
+<msg timestamp="20170618 00:36:56.754" level="INFO">${uuid} = 1fc5d594-f68b-42f0-8fa7-182f38b1a574</msg>
+<status status="PASS" endtime="20170618 00:36:56.754" starttime="20170618 00:36:56.754"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>selenium-${uuid}.png</arg>
+</arguments>
+<msg timestamp="20170618 00:36:57.986" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-1fc5d594-f68b-42f0-8fa7-182f38b1a574.png"&gt;&lt;img src="selenium-1fc5d594-f68b-42f0-8fa7-182f38b1a574.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170618 00:36:57.986" starttime="20170618 00:36:56.754"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170618 00:37:02.999" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170618 00:37:02.999" starttime="20170618 00:36:57.986"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170618 00:37:03.280" starttime="20170618 00:37:02.999"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:37:03.280" starttime="20170618 00:36:56.754"></status>
+</kw>
+<status status="PASS" endtime="20170618 00:37:03.280" critical="yes" starttime="20170618 00:36:56.520"></status>
+</test>
+<doc>Demo of Robot Framework for Flight Application</doc>
+<status status="PASS" endtime="20170618 00:37:03.280" starttime="20170618 00:36:13.960"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="6">Critical Tests</stat>
+<stat fail="0" pass="6">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="FlightApp" pass="6">FlightApp</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
