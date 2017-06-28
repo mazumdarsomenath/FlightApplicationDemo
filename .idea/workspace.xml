@@ -1,44 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c6a72bd-f161-442f-854e-898f22d2cc1d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-067b87dc-441d-4f0e-af43-968b4e531293.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-109d6f35-3f94-459b-ae97-640e620716cb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-1501facb-04de-492e-a474-929050075be9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-17a4abbe-cc32-4c7a-a9d2-0098fe06560d.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-1f1f50c7-0c4e-4a9b-9c40-1dcc1e3cd060.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-2ef1e0aa-e34f-4055-961e-eeda800cf93e.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-327e0198-de0f-4e9f-94ba-a5c1682dd63e.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-3383e351-ab49-4f6b-8c30-136d4cf92bc5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-33a27079-6d53-4921-8243-53dcfed82cf8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-34bcc4db-e08d-44ba-b6a5-9db6b5ff056b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-47067be5-fecb-482c-98d2-8d62931e2e8d.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-482966bf-7572-4bc0-8c8b-eadb6d9013b4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-5387fe74-802b-4d7e-b194-6a3852b89f7b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-59a3d35d-9959-48ad-a226-5f150a4cc944.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-5b6c5f8d-5c13-4bfc-aa18-7ee7b96cfbe2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-5bcd4b91-1bd3-4a5c-a2f2-091d799fc88a.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-64fa2c4a-50f9-4537-846c-def5396f9d8e.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-75669e0c-e9ef-4d69-a9d2-61aaf87c8d07.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-7a1545e4-3aee-430a-aa3f-eed86ae3b659.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-7b7355c7-cac9-4585-bfb3-4e5cb405d15e.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-b15856a4-30bc-4e1d-8772-cc2d814bf1cf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-c006a862-2b6f-430a-b96e-79c9a797ed29.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-c81ddd17-ecc4-4fdf-8b57-197a6221cd38.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-caee596c-335e-48fb-af03-021117cfa0b3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-d6bb2069-6b28-4ff8-902c-7ccafba4a034.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-e13ca690-85a9-4862-817b-c2bffb9fc133.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-e6bae2db-c0e1-4657-bac5-8a54753ed36f.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/selenium-f765e3af-4414-4439-b4dd-8b141bfe7a82.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Globalparameters.robot" afterPath="$PROJECT_DIR$/Resources/Globalparameters.robot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/PO/Login.robot" afterPath="$PROJECT_DIR$/Resources/PO/Login.robot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/PO/Openbrowser.robot" afterPath="$PROJECT_DIR$/Resources/PO/Openbrowser.robot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Results/log.html" afterPath="$PROJECT_DIR$/Results/log.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Results/output.xml" afterPath="$PROJECT_DIR$/Results/output.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Results/report.html" afterPath="$PROJECT_DIR$/Results/report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/FlightApp.robot" afterPath="$PROJECT_DIR$/Tests/FlightApp.robot" />
-    </list>
+    <list default="true" id="0c6a72bd-f161-442f-854e-898f22d2cc1d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +15,7 @@
       <file leaf-file-name="FlightApp.robot" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/FlightApp.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="34">
               <caret line="10" column="61" lean-forward="false" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="95" />
               <folding>
                 <element signature="e#0#399#0" expanded="true" />
@@ -64,7 +27,7 @@
       <file leaf-file-name="Openbrowser.robot" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Resources/PO/Openbrowser.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="136">
               <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="e#0#88#0" expanded="true" />
@@ -77,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/Resources/Globalparameters.robot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+              <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -157,10 +120,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1592" />
-    <option name="y" value="-74" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -178,6 +141,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -302,8 +267,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -435,18 +398,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1592" y="-74" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17135416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4832827" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48239896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39895698" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -586,7 +549,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/PO/Openbrowser.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="136">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#0#88#0" expanded="true" />
@@ -594,14 +557,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Results/selenium-7bf768ca-eadb-46fa-a1f2-ac5a3f544435.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/selenium-7bf768ca-eadb-46fa-a1f2-ac5a3f544435.png" />
     <entry file="file://$PROJECT_DIR$/Tests/FlightApp.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="34">
           <caret line="10" column="61" lean-forward="false" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="95" />
           <folding>
             <element signature="e#0#399#0" expanded="true" />
@@ -612,7 +571,7 @@
     <entry file="file://$PROJECT_DIR$/Resources/Globalparameters.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding />
         </state>
       </provider>
