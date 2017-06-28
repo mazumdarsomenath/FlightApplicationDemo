@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170618 15:25:18.698" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<robot generated="20170628 11:09:34.745" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
 <suite source="C:\development\robot-scripts\FlightApplication\tests\FlightApp.robot" id="s1" name="FlightApp">
 <test id="s1-t1" name="Should be able to navigate To Login Page">
 <kw name="Open the browser" library="Openbrowser">
@@ -9,10 +9,10 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20170618 15:25:19.028" level="INFO">Opening browser 'ie' to base url 'http://www.newtours.demoaut.com/mercurywelcome.php'</msg>
-<status status="PASS" endtime="20170618 15:25:28.452" starttime="20170618 15:25:19.012"></status>
+<msg timestamp="20170628 11:09:35.167" level="INFO">Opening browser 'firefox' to base url 'http://www.newtours.demoaut.com/mercurywelcome.php'</msg>
+<status status="PASS" endtime="20170628 11:12:16.037" starttime="20170628 11:09:35.167"></status>
 </kw>
-<status status="PASS" endtime="20170618 15:25:28.452" starttime="20170618 15:25:19.012"></status>
+<status status="PASS" endtime="20170628 11:12:16.037" starttime="20170628 11:09:35.167"></status>
 </kw>
 <kw name="Init" library="Openbrowser">
 <kw name="Register Keyword To Run On Failure" library="Selenium2Library">
@@ -20,10 +20,10 @@
 <arguments>
 <arg>Capture Page Screenshot With Unique Name</arg>
 </arguments>
-<msg timestamp="20170618 15:25:28.468" level="INFO">Capture Page Screenshot With Unique Name will be run on failure.</msg>
-<status status="PASS" endtime="20170618 15:25:28.468" starttime="20170618 15:25:28.452"></status>
+<msg timestamp="20170628 11:12:16.037" level="INFO">Capture Page Screenshot With Unique Name will be run on failure.</msg>
+<status status="PASS" endtime="20170628 11:12:16.037" starttime="20170628 11:12:16.037"></status>
 </kw>
-<status status="PASS" endtime="20170618 15:25:28.468" starttime="20170618 15:25:28.452"></status>
+<status status="PASS" endtime="20170628 11:12:16.037" starttime="20170628 11:12:16.037"></status>
 </kw>
 <kw name="Capture Page Screenshot With Unique Name" library="Openbrowser">
 <kw name="Uuid 4" library="uuid">
@@ -31,18 +31,18 @@
 <assign>
 <var>${uuid}</var>
 </assign>
-<msg timestamp="20170618 15:25:28.468" level="INFO">${uuid} = 482966bf-7572-4bc0-8c8b-eadb6d9013b4</msg>
-<status status="PASS" endtime="20170618 15:25:28.468" starttime="20170618 15:25:28.468"></status>
+<msg timestamp="20170628 11:12:16.037" level="INFO">${uuid} = 7bf768ca-eadb-46fa-a1f2-ac5a3f544435</msg>
+<status status="PASS" endtime="20170628 11:12:16.037" starttime="20170628 11:12:16.037"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
 <arguments>
 <arg>selenium-${uuid}.png</arg>
 </arguments>
-<msg timestamp="20170618 15:25:28.811" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-482966bf-7572-4bc0-8c8b-eadb6d9013b4.png"&gt;&lt;img src="selenium-482966bf-7572-4bc0-8c8b-eadb6d9013b4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170618 15:25:28.811" starttime="20170618 15:25:28.484"></status>
+<msg timestamp="20170628 11:12:16.225" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-7bf768ca-eadb-46fa-a1f2-ac5a3f544435.png"&gt;&lt;img src="selenium-7bf768ca-eadb-46fa-a1f2-ac5a3f544435.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170628 11:12:16.225" starttime="20170628 11:12:16.037"></status>
 </kw>
-<status status="PASS" endtime="20170618 15:25:28.811" starttime="20170618 15:25:28.468"></status>
+<status status="PASS" endtime="20170628 11:12:16.225" starttime="20170628 11:12:16.037"></status>
 </kw>
 <kw name="Verify Page Loaded" library="Openbrowser">
 <kw name="Wait Until Page Contains" library="Selenium2Library">
@@ -50,14 +50,32 @@
 <arguments>
 <arg>${LANDING_TEXT}</arg>
 </arguments>
-<status status="PASS" endtime="20170618 15:25:29.170" starttime="20170618 15:25:28.811"></status>
+<kw name="Capture Page Screenshot With Unique Name">
+<msg timestamp="20170628 11:12:21.364" level="FAIL">Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
+    Bookflight.Capture Page Screenshot With Unique Name
+    Flightfinder.Capture Page Screenshot With Unique Name
+    Login.Capture Page Screenshot With Unique Name
+    Logout.Capture Page Screenshot With Unique Name
+    Openbrowser.Capture Page Screenshot With Unique Name
+    Selectflight.Capture Page Screenshot With Unique Name</msg>
+<status status="FAIL" endtime="20170628 11:12:21.364" starttime="20170628 11:12:21.364"></status>
 </kw>
-<status status="PASS" endtime="20170618 15:25:29.170" starttime="20170618 15:25:28.811"></status>
+<msg timestamp="20170628 11:12:21.364" level="WARN">Keyword 'Capture Page Screenshot With Unique Name' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
+    Bookflight.Capture Page Screenshot With Unique Name
+    Flightfinder.Capture Page Screenshot With Unique Name
+    Login.Capture Page Screenshot With Unique Name
+    Logout.Capture Page Screenshot With Unique Name
+    Openbrowser.Capture Page Screenshot With Unique Name
+    Selectflight.Capture Page Screenshot With Unique Name</msg>
+<msg timestamp="20170628 11:12:21.380" level="FAIL">Text 'SIGN-ON' did not appear in 5 seconds</msg>
+<status status="FAIL" endtime="20170628 11:12:21.380" starttime="20170628 11:12:16.225"></status>
+</kw>
+<status status="FAIL" endtime="20170628 11:12:21.380" starttime="20170628 11:12:16.225"></status>
 </kw>
 <tags>
 <tag>Flightdemo</tag>
 </tags>
-<status status="PASS" endtime="20170618 15:25:29.170" critical="yes" starttime="20170618 15:25:19.012"></status>
+<status status="FAIL" endtime="20170628 11:12:21.380" critical="yes" starttime="20170628 11:09:35.167">Text 'SIGN-ON' did not appear in 5 seconds</status>
 </test>
 <test id="s1-t2" name="Should be able to login thru The User Credentials">
 <kw name="Sign-on thru user credentials" library="Login">
@@ -67,103 +85,67 @@
 <arg>name=userName</arg>
 <arg>${USER_NAME}</arg>
 </arguments>
-<msg timestamp="20170618 15:25:29.170" level="INFO">Typing text 'mercury' into text field 'name=userName'</msg>
-<status status="PASS" endtime="20170618 15:26:05.366" starttime="20170618 15:25:29.170"></status>
+<msg timestamp="20170628 11:12:21.380" level="INFO">Typing text 'mercury' into text field 'name=userName'</msg>
+<kw name="Capture Page Screenshot With Unique Name">
+<msg timestamp="20170628 11:12:21.442" level="FAIL">Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
+    Bookflight.Capture Page Screenshot With Unique Name
+    Flightfinder.Capture Page Screenshot With Unique Name
+    Login.Capture Page Screenshot With Unique Name
+    Logout.Capture Page Screenshot With Unique Name
+    Openbrowser.Capture Page Screenshot With Unique Name
+    Selectflight.Capture Page Screenshot With Unique Name</msg>
+<status status="FAIL" endtime="20170628 11:12:21.442" starttime="20170628 11:12:21.442"></status>
 </kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>name=password</arg>
-<arg>${PASSWD}</arg>
-</arguments>
-<msg timestamp="20170618 15:26:05.366" level="INFO">Typing text 'mercury' into text field 'name=password'</msg>
-<status status="PASS" endtime="20170618 15:26:41.445" starttime="20170618 15:26:05.366"></status>
+<msg timestamp="20170628 11:12:21.442" level="WARN">Keyword 'Capture Page Screenshot With Unique Name' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
+    Bookflight.Capture Page Screenshot With Unique Name
+    Flightfinder.Capture Page Screenshot With Unique Name
+    Login.Capture Page Screenshot With Unique Name
+    Logout.Capture Page Screenshot With Unique Name
+    Openbrowser.Capture Page Screenshot With Unique Name
+    Selectflight.Capture Page Screenshot With Unique Name</msg>
+<msg timestamp="20170628 11:12:21.458" level="FAIL">ValueError: Element locator 'name=userName' did not match any elements.</msg>
+<status status="FAIL" endtime="20170628 11:12:21.458" starttime="20170628 11:12:21.380"></status>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>name=login</arg>
-</arguments>
-<msg timestamp="20170618 15:26:41.445" level="INFO">Clicking element 'name=login'.</msg>
-<status status="PASS" endtime="20170618 15:26:49.146" starttime="20170618 15:26:41.445"></status>
-</kw>
-<status status="PASS" endtime="20170618 15:26:49.146" starttime="20170618 15:25:29.170"></status>
-</kw>
-<kw name="Capture Page Screenshot With Unique Name" library="Login">
-<kw name="Uuid 4" library="uuid">
-<doc>Generate a random UUID.</doc>
-<assign>
-<var>${uuid}</var>
-</assign>
-<msg timestamp="20170618 15:26:49.146" level="INFO">${uuid} = f765e3af-4414-4439-b4dd-8b141bfe7a82</msg>
-<status status="PASS" endtime="20170618 15:26:49.146" starttime="20170618 15:26:49.146"></status>
-</kw>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<arguments>
-<arg>selenium-${uuid}.png</arg>
-</arguments>
-<msg timestamp="20170618 15:26:49.318" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-f765e3af-4414-4439-b4dd-8b141bfe7a82.png"&gt;&lt;img src="selenium-f765e3af-4414-4439-b4dd-8b141bfe7a82.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170618 15:26:49.318" starttime="20170618 15:26:49.146"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>5s</arg>
-</arguments>
-<msg timestamp="20170618 15:26:54.331" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20170618 15:26:54.331" starttime="20170618 15:26:49.318"></status>
-</kw>
-<status status="PASS" endtime="20170618 15:26:54.331" starttime="20170618 15:26:49.146"></status>
+<status status="FAIL" endtime="20170628 11:12:21.458" starttime="20170628 11:12:21.380"></status>
 </kw>
 <tags>
 <tag>Flightdemo</tag>
 </tags>
-<status status="PASS" endtime="20170618 15:26:54.331" critical="yes" starttime="20170618 15:25:29.170"></status>
+<status status="FAIL" endtime="20170628 11:12:21.458" critical="yes" starttime="20170628 11:12:21.380">ValueError: Element locator 'name=userName' did not match any elements.</status>
 </test>
 <test id="s1-t3" name="Should be able to navigate to Flight Finder Page and click to Continue button">
-<kw name="Click to navigate Flight finder page" library="Flightfinder">
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>name=findFlights</arg>
-</arguments>
-<msg timestamp="20170618 15:26:54.331" level="INFO">Clicking element 'name=findFlights'.</msg>
-<status status="PASS" endtime="20170618 15:26:59.403" starttime="20170618 15:26:54.331"></status>
-</kw>
-<status status="PASS" endtime="20170618 15:26:59.403" starttime="20170618 15:26:54.331"></status>
-</kw>
 <kw name="Capture Page Screenshot With Unique Name" library="Flightfinder">
 <kw name="Uuid 4" library="uuid">
 <doc>Generate a random UUID.</doc>
 <assign>
 <var>${uuid}</var>
 </assign>
-<msg timestamp="20170618 15:26:59.403" level="INFO">${uuid} = 3383e351-ab49-4f6b-8c30-136d4cf92bc5</msg>
-<status status="PASS" endtime="20170618 15:26:59.403" starttime="20170618 15:26:59.403"></status>
+<msg timestamp="20170628 11:12:21.474" level="INFO">${uuid} = a0999224-3d47-43bc-b904-d3f7ecc1c985</msg>
+<status status="PASS" endtime="20170628 11:12:21.474" starttime="20170628 11:12:21.458"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
 <arguments>
 <arg>selenium-${uuid}.png</arg>
 </arguments>
-<msg timestamp="20170618 15:26:59.778" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-3383e351-ab49-4f6b-8c30-136d4cf92bc5.png"&gt;&lt;img src="selenium-3383e351-ab49-4f6b-8c30-136d4cf92bc5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170618 15:26:59.778" starttime="20170618 15:26:59.403"></status>
+<msg timestamp="20170628 11:12:21.614" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-a0999224-3d47-43bc-b904-d3f7ecc1c985.png"&gt;&lt;img src="selenium-a0999224-3d47-43bc-b904-d3f7ecc1c985.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170628 11:12:21.614" starttime="20170628 11:12:21.474"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20170618 15:27:04.793" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20170618 15:27:04.793" starttime="20170618 15:26:59.778"></status>
+<msg timestamp="20170628 11:12:26.644" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170628 11:12:26.644" starttime="20170628 11:12:21.614"></status>
 </kw>
-<status status="PASS" endtime="20170618 15:27:04.793" starttime="20170618 15:26:59.403"></status>
+<status status="PASS" endtime="20170628 11:12:26.644" starttime="20170628 11:12:21.458"></status>
 </kw>
 <tags>
 <tag>Flightdemo</tag>
+<tag>Flightfinder.Click to navigate Flight finder page</tag>
 </tags>
-<status status="PASS" endtime="20170618 15:27:04.793" critical="yes" starttime="20170618 15:26:54.331"></status>
+<status status="PASS" endtime="20170628 11:12:26.644" critical="yes" starttime="20170628 11:12:21.458"></status>
 </test>
 <test id="s1-t4" name="Should be able to navigate to Select Flight Page and click to Continue button">
 <kw name="Click to navigate Select Flight page" library="Selectflight">
@@ -172,42 +154,33 @@
 <arguments>
 <arg>name=reserveFlights</arg>
 </arguments>
-<msg timestamp="20170618 15:27:04.793" level="INFO">Clicking element 'name=reserveFlights'.</msg>
-<status status="PASS" endtime="20170618 15:27:08.692" starttime="20170618 15:27:04.793"></status>
+<msg timestamp="20170628 11:12:26.644" level="INFO">Clicking element 'name=reserveFlights'.</msg>
+<kw name="Capture Page Screenshot With Unique Name">
+<msg timestamp="20170628 11:12:26.691" level="FAIL">Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
+    Bookflight.Capture Page Screenshot With Unique Name
+    Flightfinder.Capture Page Screenshot With Unique Name
+    Login.Capture Page Screenshot With Unique Name
+    Logout.Capture Page Screenshot With Unique Name
+    Openbrowser.Capture Page Screenshot With Unique Name
+    Selectflight.Capture Page Screenshot With Unique Name</msg>
+<status status="FAIL" endtime="20170628 11:12:26.691" starttime="20170628 11:12:26.691"></status>
 </kw>
-<status status="PASS" endtime="20170618 15:27:08.692" starttime="20170618 15:27:04.793"></status>
+<msg timestamp="20170628 11:12:26.691" level="WARN">Keyword 'Capture Page Screenshot With Unique Name' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
+    Bookflight.Capture Page Screenshot With Unique Name
+    Flightfinder.Capture Page Screenshot With Unique Name
+    Login.Capture Page Screenshot With Unique Name
+    Logout.Capture Page Screenshot With Unique Name
+    Openbrowser.Capture Page Screenshot With Unique Name
+    Selectflight.Capture Page Screenshot With Unique Name</msg>
+<msg timestamp="20170628 11:12:26.691" level="FAIL">ValueError: Element locator 'name=reserveFlights' did not match any elements.</msg>
+<status status="FAIL" endtime="20170628 11:12:26.691" starttime="20170628 11:12:26.644"></status>
 </kw>
-<kw name="Capture Page Screenshot With Unique Name" library="Selectflight">
-<kw name="Uuid 4" library="uuid">
-<doc>Generate a random UUID.</doc>
-<assign>
-<var>${uuid}</var>
-</assign>
-<msg timestamp="20170618 15:27:08.692" level="INFO">${uuid} = 34bcc4db-e08d-44ba-b6a5-9db6b5ff056b</msg>
-<status status="PASS" endtime="20170618 15:27:08.692" starttime="20170618 15:27:08.692"></status>
-</kw>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<arguments>
-<arg>selenium-${uuid}.png</arg>
-</arguments>
-<msg timestamp="20170618 15:27:09.004" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-34bcc4db-e08d-44ba-b6a5-9db6b5ff056b.png"&gt;&lt;img src="selenium-34bcc4db-e08d-44ba-b6a5-9db6b5ff056b.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170618 15:27:09.004" starttime="20170618 15:27:08.692"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>5s</arg>
-</arguments>
-<msg timestamp="20170618 15:27:14.008" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20170618 15:27:14.008" starttime="20170618 15:27:09.004"></status>
-</kw>
-<status status="PASS" endtime="20170618 15:27:14.008" starttime="20170618 15:27:08.692"></status>
+<status status="FAIL" endtime="20170628 11:12:26.691" starttime="20170628 11:12:26.644"></status>
 </kw>
 <tags>
 <tag>Flightdemo</tag>
 </tags>
-<status status="PASS" endtime="20170618 15:27:14.008" critical="yes" starttime="20170618 15:27:04.793"></status>
+<status status="FAIL" endtime="20170628 11:12:26.691" critical="yes" starttime="20170628 11:12:26.644">ValueError: Element locator 'name=reserveFlights' did not match any elements.</status>
 </test>
 <test id="s1-t5" name="Should be able to Book flights thru Flight Application">
 <kw name="Enter the credit card details to Book a Flight page" library="Bookflight">
@@ -217,68 +190,33 @@
 <arg>name=passFirst0</arg>
 <arg>${FIRST_NAME}</arg>
 </arguments>
-<msg timestamp="20170618 15:27:14.008" level="INFO">Typing text 'FNAME' into text field 'name=passFirst0'</msg>
-<status status="PASS" endtime="20170618 15:27:40.599" starttime="20170618 15:27:14.008"></status>
+<msg timestamp="20170628 11:12:26.691" level="INFO">Typing text 'FNAME' into text field 'name=passFirst0'</msg>
+<kw name="Capture Page Screenshot With Unique Name">
+<msg timestamp="20170628 11:12:26.757" level="FAIL">Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
+    Bookflight.Capture Page Screenshot With Unique Name
+    Flightfinder.Capture Page Screenshot With Unique Name
+    Login.Capture Page Screenshot With Unique Name
+    Logout.Capture Page Screenshot With Unique Name
+    Openbrowser.Capture Page Screenshot With Unique Name
+    Selectflight.Capture Page Screenshot With Unique Name</msg>
+<status status="FAIL" endtime="20170628 11:12:26.757" starttime="20170628 11:12:26.757"></status>
 </kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>name=passLast0</arg>
-<arg>${LAST_NAME}</arg>
-</arguments>
-<msg timestamp="20170618 15:27:40.599" level="INFO">Typing text 'LNAME' into text field 'name=passLast0'</msg>
-<status status="PASS" endtime="20170618 15:28:07.307" starttime="20170618 15:27:40.599"></status>
+<msg timestamp="20170628 11:12:26.757" level="WARN">Keyword 'Capture Page Screenshot With Unique Name' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
+    Bookflight.Capture Page Screenshot With Unique Name
+    Flightfinder.Capture Page Screenshot With Unique Name
+    Login.Capture Page Screenshot With Unique Name
+    Logout.Capture Page Screenshot With Unique Name
+    Openbrowser.Capture Page Screenshot With Unique Name
+    Selectflight.Capture Page Screenshot With Unique Name</msg>
+<msg timestamp="20170628 11:12:26.760" level="FAIL">ValueError: Element locator 'name=passFirst0' did not match any elements.</msg>
+<status status="FAIL" endtime="20170628 11:12:26.760" starttime="20170628 11:12:26.691"></status>
 </kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>name=creditnumber</arg>
-<arg>${CC_NUMBER}</arg>
-</arguments>
-<msg timestamp="20170618 15:28:07.307" level="INFO">Typing text '1234567887654321' into text field 'name=creditnumber'</msg>
-<status status="PASS" endtime="20170618 15:29:28.338" starttime="20170618 15:28:07.307"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>name=buyFlights</arg>
-</arguments>
-<msg timestamp="20170618 15:29:28.338" level="INFO">Clicking element 'name=buyFlights'.</msg>
-<status status="PASS" endtime="20170618 15:29:29.247" starttime="20170618 15:29:28.338"></status>
-</kw>
-<status status="PASS" endtime="20170618 15:29:29.247" starttime="20170618 15:27:14.008"></status>
-</kw>
-<kw name="Capture Page Screenshot With Unique Name" library="Bookflight">
-<kw name="Uuid 4" library="uuid">
-<doc>Generate a random UUID.</doc>
-<assign>
-<var>${uuid}</var>
-</assign>
-<msg timestamp="20170618 15:29:29.247" level="INFO">${uuid} = 59a3d35d-9959-48ad-a226-5f150a4cc944</msg>
-<status status="PASS" endtime="20170618 15:29:29.247" starttime="20170618 15:29:29.247"></status>
-</kw>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<arguments>
-<arg>selenium-${uuid}.png</arg>
-</arguments>
-<msg timestamp="20170618 15:29:29.546" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-59a3d35d-9959-48ad-a226-5f150a4cc944.png"&gt;&lt;img src="selenium-59a3d35d-9959-48ad-a226-5f150a4cc944.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170618 15:29:29.546" starttime="20170618 15:29:29.247"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>5s</arg>
-</arguments>
-<msg timestamp="20170618 15:29:34.547" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20170618 15:29:34.547" starttime="20170618 15:29:29.546"></status>
-</kw>
-<status status="PASS" endtime="20170618 15:29:34.547" starttime="20170618 15:29:29.247"></status>
+<status status="FAIL" endtime="20170628 11:12:26.760" starttime="20170628 11:12:26.691"></status>
 </kw>
 <tags>
 <tag>Flightdemo</tag>
 </tags>
-<status status="PASS" endtime="20170618 15:29:34.547" critical="yes" starttime="20170618 15:27:14.008"></status>
+<status status="FAIL" endtime="20170628 11:12:26.761" critical="yes" starttime="20170628 11:12:26.691">ValueError: Element locator 'name=passFirst0' did not match any elements.</status>
 </test>
 <test id="s1-t6" name="Should be able to verify Flight Confirmation page and close browser by logging out">
 <kw name="Logs out from flight confirmation page and close the browser" library="Logout">
@@ -287,51 +225,80 @@
 <arguments>
 <arg>xpath=//img[contains(@src,'/images/forms/Logout.gif')]</arg>
 </arguments>
-<msg timestamp="20170618 15:29:34.547" level="INFO">Clicking element 'xpath=//img[contains(@src,'/images/forms/Logout.gif')]'.</msg>
+<msg timestamp="20170628 11:12:26.766" level="INFO">Clicking element 'xpath=//img[contains(@src,'/images/forms/Logout.gif')]'.</msg>
 <kw name="Capture Page Screenshot With Unique Name">
-<msg timestamp="20170618 15:29:34.984" level="FAIL">Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
+<msg timestamp="20170628 11:12:26.813" level="FAIL">Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
     Bookflight.Capture Page Screenshot With Unique Name
     Flightfinder.Capture Page Screenshot With Unique Name
     Login.Capture Page Screenshot With Unique Name
     Logout.Capture Page Screenshot With Unique Name
     Openbrowser.Capture Page Screenshot With Unique Name
     Selectflight.Capture Page Screenshot With Unique Name</msg>
-<status status="FAIL" endtime="20170618 15:29:34.984" starttime="20170618 15:29:34.984"></status>
+<status status="FAIL" endtime="20170628 11:12:26.813" starttime="20170628 11:12:26.813"></status>
 </kw>
-<msg timestamp="20170618 15:29:34.984" level="WARN">Keyword 'Capture Page Screenshot With Unique Name' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
+<msg timestamp="20170628 11:12:26.813" level="WARN">Keyword 'Capture Page Screenshot With Unique Name' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
     Bookflight.Capture Page Screenshot With Unique Name
     Flightfinder.Capture Page Screenshot With Unique Name
     Login.Capture Page Screenshot With Unique Name
     Logout.Capture Page Screenshot With Unique Name
     Openbrowser.Capture Page Screenshot With Unique Name
     Selectflight.Capture Page Screenshot With Unique Name</msg>
-<msg timestamp="20170618 15:29:35.000" level="FAIL">ValueError: Element locator 'xpath=//img[contains(@src,'/images/forms/Logout.gif')]' did not match any elements.</msg>
-<status status="FAIL" endtime="20170618 15:29:35.000" starttime="20170618 15:29:34.547"></status>
+<msg timestamp="20170628 11:12:26.816" level="FAIL">ValueError: Element locator 'xpath=//img[contains(@src,'/images/forms/Logout.gif')]' did not match any elements.</msg>
+<status status="FAIL" endtime="20170628 11:12:26.816" starttime="20170628 11:12:26.766"></status>
 </kw>
-<status status="FAIL" endtime="20170618 15:29:35.000" starttime="20170618 15:29:34.547"></status>
+<status status="FAIL" endtime="20170628 11:12:26.816" starttime="20170628 11:12:26.765"></status>
 </kw>
 <tags>
 <tag>Flightdemo</tag>
 </tags>
-<status status="FAIL" endtime="20170618 15:29:35.000" critical="yes" starttime="20170618 15:29:34.547">ValueError: Element locator 'xpath=//img[contains(@src,'/images/forms/Logout.gif')]' did not match any elements.</status>
+<status status="FAIL" endtime="20170628 11:12:26.817" critical="yes" starttime="20170628 11:12:26.763">ValueError: Element locator 'xpath=//img[contains(@src,'/images/forms/Logout.gif')]' did not match any elements.</status>
 </test>
 <doc>Demo of Robot Framework for Flight Application</doc>
-<status status="FAIL" endtime="20170618 15:29:35.015" starttime="20170618 15:25:18.698"></status>
+<status status="FAIL" endtime="20170628 11:12:26.820" starttime="20170628 11:09:34.761"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="5">Critical Tests</stat>
-<stat fail="1" pass="5">All Tests</stat>
+<stat fail="5" pass="1">Critical Tests</stat>
+<stat fail="5" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="1" pass="5">Flightdemo</stat>
+<stat fail="5" pass="1">Flightdemo</stat>
+<stat fail="0" pass="1">Flightfinder.Click to navigate Flight finder page</stat>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="FlightApp" pass="5">FlightApp</stat>
+<stat fail="5" id="s1" name="FlightApp" pass="1">FlightApp</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20170618 15:29:34.984" level="WARN">Keyword 'Capture Page Screenshot With Unique Name' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
+<msg timestamp="20170628 11:12:21.364" level="WARN">Keyword 'Capture Page Screenshot With Unique Name' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
+    Bookflight.Capture Page Screenshot With Unique Name
+    Flightfinder.Capture Page Screenshot With Unique Name
+    Login.Capture Page Screenshot With Unique Name
+    Logout.Capture Page Screenshot With Unique Name
+    Openbrowser.Capture Page Screenshot With Unique Name
+    Selectflight.Capture Page Screenshot With Unique Name</msg>
+<msg timestamp="20170628 11:12:21.442" level="WARN">Keyword 'Capture Page Screenshot With Unique Name' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
+    Bookflight.Capture Page Screenshot With Unique Name
+    Flightfinder.Capture Page Screenshot With Unique Name
+    Login.Capture Page Screenshot With Unique Name
+    Logout.Capture Page Screenshot With Unique Name
+    Openbrowser.Capture Page Screenshot With Unique Name
+    Selectflight.Capture Page Screenshot With Unique Name</msg>
+<msg timestamp="20170628 11:12:26.691" level="WARN">Keyword 'Capture Page Screenshot With Unique Name' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
+    Bookflight.Capture Page Screenshot With Unique Name
+    Flightfinder.Capture Page Screenshot With Unique Name
+    Login.Capture Page Screenshot With Unique Name
+    Logout.Capture Page Screenshot With Unique Name
+    Openbrowser.Capture Page Screenshot With Unique Name
+    Selectflight.Capture Page Screenshot With Unique Name</msg>
+<msg timestamp="20170628 11:12:26.757" level="WARN">Keyword 'Capture Page Screenshot With Unique Name' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
+    Bookflight.Capture Page Screenshot With Unique Name
+    Flightfinder.Capture Page Screenshot With Unique Name
+    Login.Capture Page Screenshot With Unique Name
+    Logout.Capture Page Screenshot With Unique Name
+    Openbrowser.Capture Page Screenshot With Unique Name
+    Selectflight.Capture Page Screenshot With Unique Name</msg>
+<msg timestamp="20170628 11:12:26.813" level="WARN">Keyword 'Capture Page Screenshot With Unique Name' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot With Unique Name' found. Give the full name of the keyword you want to use:
     Bookflight.Capture Page Screenshot With Unique Name
     Flightfinder.Capture Page Screenshot With Unique Name
     Login.Capture Page Screenshot With Unique Name

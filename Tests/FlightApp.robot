@@ -8,9 +8,9 @@ Resource     ../Resources/PO/Selectflight.robot
 Resource     ../Resources/PO/Bookflight.robot
 Resource     ../Resources/PO/Logout.robot
 
-# Execution with no overide of browser : robot -d results tests/FlightApp.robot
-# Execution thru override of chrome browser : robot -d results -i Flightdemo -v BROWSER:chrome tests/FlightApp.robot
-# Execution thru override of firefox browser : robot -d results -i Flightdemo -v BROWSER:firefox tests/FlightApp.robot
+# Command for the Execution with no overide of browser : robot -d results tests/FlightApp.robot
+# Command for the Execution thru override of chrome browser : robot -d results -i Flightdemo -v BROWSER:chrome tests/FlightApp.robot
+# Command for the Execution thru override of firefox browser : robot -d results -i Flightdemo -v BROWSER:firefox tests/FlightApp.robot
 
 *** Test Cases ***
 
@@ -27,8 +27,7 @@ Should be able to login thru The User Credentials
      Login.Capture Page Screenshot With Unique Name
 
 Should be able to navigate to Flight Finder Page and click to Continue button
-     [Tags]  Flightdemo
-     Flightfinder.Click to navigate Flight finder page
+     [Tags]  Flightdemo     Flightfinder.Click to navigate Flight finder page
      Flightfinder.Capture Page Screenshot With Unique Name
 
 Should be able to navigate to Select Flight Page and click to Continue button

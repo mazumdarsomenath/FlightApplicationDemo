@@ -1,13 +1,12 @@
 *** Settings ***
-#Resource     ../Resources/Globalparameters.robot
 Library      Selenium2Library
+#Library      SauceLabs
 Library      uuid
 
 *** Variables ***
 ${LANDING_TEXT} =  SIGN-ON
 
 *** Keywords ***
-
 Open the browser
       open browser      ${URL}     ${BROWSER}
 
